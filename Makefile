@@ -8,8 +8,8 @@
 
 CC	=	gcc
 CXX	=	g++
-CFLAGS	=	-pipe -Wall -W -O3 -finline-functions -finline-limit=38400 -fno-strict-aliasing -Winline 
-CXXFLAGS=	-pipe -Wall -W -O3 -finline-functions -finline-limit=38400 -fno-strict-aliasing -Winline 
+CFLAGS	=	-g -pipe -Wall -W -O3 -finline-functions -finline-limit=38400 -fno-strict-aliasing -Winline 
+CXXFLAGS=	-g -pipe -Wall -W -O3 -finline-functions -finline-limit=38400 -fno-strict-aliasing -Winline 
 INCPATH	=	
 LINK	=	g++
 LFLAGS	=	
