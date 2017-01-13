@@ -120,62 +120,8 @@ test.exe: cmake_check_build_system
 
 # fast build rule for target.
 test.exe/fast:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/build
+	$(MAKE) -f src/CMakeFiles/test.exe.dir/build.make src/CMakeFiles/test.exe.dir/build
 .PHONY : test.exe/fast
-
-A.o: A.cpp.o
-
-.PHONY : A.o
-
-# target to build an object file
-A.cpp.o:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/A.cpp.o
-.PHONY : A.cpp.o
-
-A.i: A.cpp.i
-
-.PHONY : A.i
-
-# target to preprocess a source file
-A.cpp.i:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/A.cpp.i
-.PHONY : A.cpp.i
-
-A.s: A.cpp.s
-
-.PHONY : A.s
-
-# target to generate assembly for a file
-A.cpp.s:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/A.cpp.s
-.PHONY : A.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/test.exe.dir/build.make CMakeFiles/test.exe.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +132,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test.exe"
-	@echo "... A.o"
-	@echo "... A.i"
-	@echo "... A.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 
